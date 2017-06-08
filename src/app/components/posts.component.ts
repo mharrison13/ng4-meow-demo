@@ -6,4 +6,14 @@ import {Observable} from "rxjs";
 	templateUrl: "./templates/posts.php"
 })
 
-export class PostsComponent {}
+export class PostsComponent {
+
+	posts: Post[] = [];
+
+	constructor(private postService : PostService) {}
+
+	getAllPosts(): void {
+		this.postService.getAllPosts()
+			.subscribe(posts => this.posts = posts);
+	}
+}
