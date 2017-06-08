@@ -13,3 +13,5 @@
 	</div>
 </main>
 
+<meow-footer></meow-footer>
+
