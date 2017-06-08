@@ -10,7 +10,7 @@
 						<h1>Create New Post</h1>
 
 						<!-- Create New Post Form -->
-						<form id="contact-form">
+						<form id="contact-form" name="postForm" #postForm="ngForm" (submit)="createPost();">
 							<div class="form-group">
 								<label class="sr-only" for="postTitle">Title <span class="text-danger">*</span></label>
 								<div class="input-group">
@@ -18,9 +18,9 @@
 										<i class="fa fa-pencil" aria-hidden="true"></i>
 									</div>
 									<input type="text" class="form-control" id="postTitle" name="postTitle"
-											 placeholder="Post Title">
+											 placeholder="Post Title" [(ngModel)]="newPost.postTitle">
 								</div>
-							</div>
+							</div>line
 							<div class="form-group">
 								<label class="sr-only" for="postContent">Content <span class="text-danger">*</span></label>
 								<div class="input-group">
