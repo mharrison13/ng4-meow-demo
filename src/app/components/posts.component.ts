@@ -6,11 +6,15 @@ import {Observable} from "rxjs";
 	templateUrl: "./templates/posts.php"
 })
 
-export class PostsComponent {
+export class PostsComponent  implements OnInit {
 
 	posts: Post[] = [];
 
 	constructor(private postService : PostService) {}
+
+	ngOnInit() : void {
+		this.getAllPosts();
+	}
 
 	getAllPosts(): void {
 		this.postService.getAllPosts()
