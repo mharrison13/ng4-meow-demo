@@ -3,7 +3,7 @@ import {ActivatedRoute, Params} from "@angular/router";
 import {Observable} from "rxjs";
 
 @Component({
-	templateUrl: "./templates/about.php"
+	templateUrl: "./templates/posts.php"
 })
 
-export class AboutComponent {}
+export class PostsComponent {}

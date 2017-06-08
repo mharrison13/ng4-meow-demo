@@ -3,7 +3,8 @@ import {ActivatedRoute, Params} from "@angular/router";
 import {Observable} from "rxjs";
 
 @Component({
-	templateUrl: "./templates/about.php"
+	selector: "meow-navbar",
+	templateUrl: "./templates/navbar.php"
 })
 
-export class AboutComponent {}
+export class NavbarComponent {}
